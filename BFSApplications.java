@@ -12,10 +12,10 @@ import hxr190001.Graph.Vertex;
 public class BFSApplications {
 	
 	/* Finds the lowest common ancestor between vertex u & v
-	 * @param bfsoo
-	 * @param vertex u
-	 * @param vertex v
-	 * @return from_v (list)
+	 * @param bfsoo		BFSOO class object
+	 * @param vertex u  first vertex 
+	 * @param vertex v	seconf vertex
+	 * @return from_v 	list of vertex
 	 */
 	
 	public static List<Vertex> getCycle(BFSOO bfsoo, Vertex u, Vertex v) {
@@ -36,10 +36,8 @@ public class BFSApplications {
 	/*Helper method to detect odd cycle in graph.
 	 * Performs BFS, checks if distance between vertex u & v is equal
 	 * if cycle exists;
-	 * @param graph g
-	 * @return result (list)
-	 * else;
-	 * @return
+	 * @param g 		graph in which BFS is performed
+	 * @return result   list of the vertex which has cycle else null
 	 */
 	public List<Vertex> oddCycle(Graph g){
 		Vertex[] vertexArray = g.getVertexArray();
